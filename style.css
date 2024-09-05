@@ -1,18 +1,30 @@
-h2{
-    color: red;
+/* 아이디 */
+#id{
+    font-size: 18px;
+    font-weight: 100;    
 }
 
 /*클래스 선택자를 쓸 때는 .클래스값으로 써야한다. (중요)*/
+/* 하이라이트 */
 .highlight{
-    border : solid;
+    text-align: center;
 }
 
 /* 아이디 선택자를 쓸 때는 #아이디 값으로 써야한다.*/
+/* 프로필 */
 #profile{
-    border: solid;
-    border-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
 }
 
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    height: 50px;
+}
+
+/*--------썸네일---------*/
 .thumbnail_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,6 +34,9 @@ h2{
     width: 100%;
 }
 
+/*--------썸네일---------*/
+
+/*게시물, 팔로워, 팔로우*/
 #stat_bar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,6 +50,10 @@ h2{
     text-align: center;
 }
 
+/*---------------------*/
+
+
+/*사진 동그랗게 만들기*/
 .circle_pic{
     border: solid white 1px;
     border-radius: 50%;
@@ -51,4 +70,88 @@ h2{
 .highlight_pic{
     height: 35px;
     width : 35px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/*---------------------*/
+
+#highlight_area{
+    display:grid;
+    grid-template-columns: 45px 45px 1fr;
+}
+
+button{
+    height: 80%;
+    width: 95%;
+
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 30px;
+    border-bottom: 0.1px solid grey;
+    margin-bottom: 10px;
+}
+#top_img{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+}
+
+#top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top input{
+    height: 60%;
+    width: 95%;
+    margin: auto;
+
+    text-align: center;
+    background-color: rgb(250,250,250);
+
+    border: 1px solid gray;
+    border-radius: 3px;
+    
+    font-size: 10px;
+    font-weight: 100;
+}
+
+i{
+    color: grey;
+}
+
+#top i{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#top{
+    text-align: center;
+    padding-top: 6px;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    font-size: 15px;
+    text-align: center;
+
+    height: 30px;
+
+}
+
+.selected{
+    border-bottom: 3px solid gray;
+}
+
