@@ -1,4 +1,7 @@
 //계정명 수정
+//document : 웹 문서를 지정하는 자바스크립트 객체
+//DOMContentLoaded : HTML코드가 다 로딩될 때 이벤트 발생
+//Document Object Model
 document.addEventListener("DOMContentLoaded", function (e) {
     let configID = document.querySelector("#id i");
     let idText = document.querySelector("#id span");
